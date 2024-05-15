@@ -1,0 +1,22 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: CarRentalSystem
+  data:
+    jpa:
+      repositories:
+        enabled: true
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3306/rentalcar
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
